@@ -1,14 +1,15 @@
+.wrapper{
+    width: 900px;
+    margin: 0 auto;
+}
+
 header{
     height: 100px;
     background-color: aqua;
 }
 
-.container{
-    width: 900px;
-}
-
 ul{
-    text-align: center
+    text-align: center;
 }
 
 li{
