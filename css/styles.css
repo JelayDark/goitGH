@@ -1,20 +1,138 @@
-.wrapper{
-    width: 900px;
+.container {
+    width: 1000px;
     margin: 0 auto;
+    margin-bottom: 60px;
 }
 
-header{
-    height: 100px;
-    background-color: aqua;
+a{
+    text-decoration: none;
 }
 
-ul{
+/* Menu */
+nav{
+    position: fixed;
+    width: 960px;
+    top: 0;
+    padding: 20px;
+    background-color: rgba(240, 163, 70, 0.308);
+}
+
+.menu {
+    list-style: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 300px;
+    margin: 0;/*Убираем отступы у списка*/
+    padding: 0;/*Убираем отступы у списка*/
+}
+
+.menu_item{
+    display: inline-block;
+}
+
+.menu_item:hover>.submenu{
+    display: block;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    list-style: none;
+    margin: 0;/*Убираем отступы у списка*/
+    padding: 0;/*Убираем отступы у списка*/
+}
+
+.submenu_item{
+    margin-top:20px;
+}
+
+.menu_item>a,
+.submenu_item>a{
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+.menu_item>a:hover,
+.submenu_item>a:hover{
+    background-color: burlywood;
+}
+
+#pic_block{
+    background-color: lightgray;
+    height: 500px;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(https://placekitten.com/1000/500);
+}
+
+.color_box{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    background-color: #424242;
     text-align: center;
 }
 
-li{
-    display: inline-block;
+.box{
+    position: absolute;
     width: 100px;
-    height: 200px;
-    background-color: bisque;
+    height: 100px;
 }
+
+.box:nth-child(1) {
+    background-color: rgb(223, 52, 123);
+}
+
+.box:nth-child(2) {
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(192, 131, 40);
+}
+
+.box:nth-child(3) {
+    right: 0;
+    background-color: rgb(30, 53, 180);
+}
+
+.box:nth-child(4) {
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(223, 52, 123);
+}
+
+.box:nth-child(5) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(40, 192, 78);
+}
+
+.box:nth-child(6) {
+    top: 50%;
+    right:0;
+    transform: translateY(-50%);
+    background-color: rgb(180, 30, 30);
+}
+
+.box:nth-child(7) {
+    bottom: 0;
+    background-color: rgb(70, 33, 129);
+}
+
+.box:nth-child(8) {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(211, 179, 150);
+}
+
+.box:nth-child(9) {
+    bottom: 0;
+    right: 0;
+    background-color: rgb(85, 89, 112);
+}
+
+.div_flex{
+    display: flex;
+  }

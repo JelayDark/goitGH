@@ -2,30 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Модуль 5 дополнительные задания</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <!-- <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css"> -->
-    <title>Document</title>
+    
 </head>
 <body>
-
-    <div class="wrapper">
-        <header></header>
-        <main>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+    <header class="container">
+        <nav>
+            <ul class="menu">
+                <li class="menu_item">
+                    <a href="#">menu-item</a>
+                    <ul class="submenu">
+                        <li class="submenu_item"><a href="#">submenu-item</a></li>
+                        <li class="submenu_item"><a href="#section-2">submenu-item</a></li>
+                        <li class="submenu_item"><a href="#">submenu-item</a></li>
+                    </ul>
+                </li>
+                <li class="menu_item">
+                    <a href="#">menu-item</a>
+                    <ul class="submenu">
+                        <li class="submenu_item"><a href="#">submenu-item</a></li>
+                        <li class="submenu_item"><a href="#">submenu-item</a></li>
+                        <li class="submenu_item"><a href="#">submenu-item</a></li>
+                    </ul>
+                </li>
             </ul>
-        </main>
-        <footer></footer>
-    </div>
-    <button>^</button>
-    
+        </nav>
+    </header>
+    <main>
+        <section id ="section-1" class="container">
+            <div id="pic_block">
+                &nbsp;
+                <!-- <input type="button"  value="Размер окна" onclick="win_func()" class="btn"> -->
+            </div>
+        </section>
+        <section id ="section-2" class="container">
+            <div class="color_box">
+                <div class="box">Child-1</div>
+                <div class="box">Child-2</div>
+                <div class="box">Child-3</div>
+                <div class="box">Child-4</div>
+                <div class="box">Child-5</div>
+                <div class="box">Child-6</div>
+                <div class="box">Child-7</div>
+                <div class="box">Child-8</div>
+                <div class="box">Child-9</div>
+            </div>
+        </section>
+        <section>
+            <div class="div_flex">
+                Hello <div>world</div><br>!
+            </div>
+        </section>
+    </main>
 </body>
+<script>
+    function win_func(){
+        var h = document.documentElement.clientWidth;
+        var doc_height = document.getElementById(pic_block)
+        // element.style.height=document.documentElement.clientWidth
+        alert (h,doc_height);
+    };
+</script>
 </html>
