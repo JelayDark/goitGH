@@ -1,0 +1,48 @@
+html {
+  --width: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 400px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  /*   width: 50%; */
+  height: 70px;
+  background-color: pink;
+  transform: rotateZ(90deg);
+  transform-origin: 0% 100%;
+}
+
+.block-item {
+  flex-basis: var(--width);
+  height: 50px;
+  background-color: green;
+  margin: 10px;
+}
+
+.one {
+  /* flex-grow: 2; */
+  flex-basis: var(--width);
+}
+
+.two {
+  /* flex-grow: 1; */
+  flex-basis: calc(var(--width) / 2);
+}
+
+.three {
+  /* flex-grow: 1; */
+  flex-basis: calc(var(--width) / 2);
+}
+
+.wrapper2 {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: flex-end;
+}
