@@ -1,0 +1,32 @@
+.wrapper {
+    background-color: red;
+}
+
+.parent {
+    position: relative;
+    width: 700px;
+    height: 700px;
+    background-color: pink;
+    -webkit-box-shadow: inset hoff voff blur #000;
+    -moz-box-shadow: inset hoff voff blur #000;
+    box-shadow: inset hoff voff blur #000;
+}
+
+.child {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    margin: -20px 0 0 -20px;
+    left: 50%;
+    /* transform: translate(-50%, 50%); */
+
+}
+
+.frst, .sec {
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    margin: 0 120px;
+}

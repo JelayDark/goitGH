@@ -1,0 +1,144 @@
+html {
+    --test: 1px;
+}
+
+:root {
+    --test-test: 3px;
+}
+
+div {
+    margin-top: var(--test);
+    padding-top: var(--test-test);
+}
+
+body{
+    counter-reset: counter1;
+}
+header {
+    padding: 5px 20px;
+    background: rgba(255, 0, 0, .3);
+    position: relative;
+}
+
+.dropdown .menu {
+    display: none;
+    width: 250px;
+    position: absolute;
+    -webkit-box-shadow: -3px 1px 24px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 1px 24px 0px rgba(0,0,0,0.75);
+    box-shadow: -3px 1px 24px 0px rgba(0,0,0,0.75);
+}
+
+.dropdown .menu li {
+    line-height: 25px;
+    margin: 2px;
+    padding: 25px;
+    background-color: aqua;
+    border: 1px solid pink;
+    cursor: pointer;
+}
+
+.dropdown .menu li:hover {
+    background-color: gray;
+}
+
+.dropdown #trigger:hover + .menu, .dropdown .menu:hover {
+    display: block;
+}
+
+#trigger {
+    cursor: pointer;
+}
+
+section {
+    padding: 25px;
+    border: 1px
+} 
+
+.first_task .menu {
+    width: 250px;
+    cursor: pointer;
+    border: 2px solid pink;
+}
+
+.first_task .menu .menu_task__item {
+    line-height: 25px;
+    margin: 2px;
+    width: 100%;
+    text-align: center;
+}
+
+.first_task .menu .menu_task__item:hover{
+    background-color: gray;
+}
+
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.first_task .menu_task-h {
+    width: 348px;
+    border: none;
+}
+
+.first_task .menu_task-h .menu_task__item {
+    float: left;
+    width: 50px;
+    border: 2px solid pink;
+}
+
+.features-item {
+    width: 100px;
+    height: 50px;
+}
+
+.features-item:nth-child(3n+1) {
+    background-color: black;
+}
+
+.features-item:nth-child(3n+2) {
+    background-color: blue;
+}
+
+.features-item:nth-child(3n) {
+    background-color: aquamarine;
+}
+
+.element {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    margin: 10px;
+    position: relative;
+}
+.element::before {
+    content: "\2192";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.task4-item{
+    counter-increment: counter1;
+    width: 100%;
+    height: 50px;
+    margin: 5px;
+    background-color: aquamarine;
+}
+.task4-item::before{
+    display:inline-block;
+    vertical-align: middle;
+    text-align: center;
+line-height: 50px;
+    background-color: aqua;
+    width: 50px;
+    height:50px;
+    content: counter(counter1, upper-roman);
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
