@@ -1,5 +1,7 @@
-html {
-    zoom: 5;
+body {
+    zoom: 4;
+    display: flex;
+    justify-content: space-around;
 }
 
 .flex {
@@ -39,7 +41,7 @@ li {
     width: 20px;
     height: 20px;
     background-color: pink;
-    animation: player-bounding 5s ease-in .5 27 alternate-reverse both;
+    /* animation: player-bounding 5s ease-in .5 27 alternate-reverse both; */
 
 }
 
@@ -72,9 +74,9 @@ li {
     position: relative;
 }
 
-.wrapper {
+.wrapper { 
     position: absolute;
-    /* display: flex; */
+    display: flex;
     top: 0;
     left: 0;
     width: 100%;
@@ -126,27 +128,33 @@ li:nth-child(5) {
         width: 0;
     }
 
-    20% {
-        width: calc(250px / 5);
-    }
-
-    40% {
-        width: calc(250px / 4);
-    }
-
-    60% {
-        width: calc(250px / 3);
-
-    }
-
-    80% {
-        width: calc(250px / 2);
-
-    }
-
     100% {
         width: 250px;
 
     }
 }
 
+.container {  
+    border: 1px solid;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    writing-mode: vertical-lr;
+    height: 100px;
+    justify-content: space-between;
+  }
+
+.semi-wrapper {
+    flex-basis: 20px;
+    height: 20px;
+    display: flex;
+}
+  
+.container .item {
+    flex-basis: 20px;
+    padding-left: 15px;
+    font-size: 5px;
+    vertical-align: top;
+    background-color: pink;
+    border: 1px solid brown;
+}
