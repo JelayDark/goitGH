@@ -1,0 +1,6 @@
+@media (min-width: 640px) {
+    .wrapper {
+        width: 75%;
+        padding: 20px;
+    }
+}
